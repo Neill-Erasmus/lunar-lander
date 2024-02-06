@@ -1,9 +1,5 @@
 # Lunar Lander
 
-<p align="center">
-    https://github.com/Neill-Erasmus/lunar-lander/assets/141222943/ede18305-6d56-45de-abcb-0f141d17085f
-</p>
-
 A Deep Q-Network (DQN) has been developed and trained to master the Lunar Lander environment within OpenAI's Gymnasium. This project is dedicated to harnessing reinforcement learning methodologies, empowering an agent to independently navigate and successfully land a lunar module on the moon's surface.
 
 ## Deep Q Learning
@@ -56,7 +52,9 @@ By combining neural networks, experience replay, and target networks, DQN has pr
 
 ## Overview of Lunar Lander Environment
 
-
+<p align="center">
+  <img src="https://github.com/Neill-Erasmus/lunar-lander/assets/141222943/8887d155-1211-4f24-a164-222219af185b" alt="lunar_lander">
+</p>
 
 The Lunar Lander environment is a part of the Box2D environments collection, providing a simulation of a spacecraft landing on the moon. Here's an overview of its key aspects:
 
