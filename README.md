@@ -1,7 +1,7 @@
 # Lunar Lander
 
 <p align="center">
-  <img src="https://github.com/Neill-Erasmus/lunar-lander/assets/141222943/8887d155-1211-4f24-a164-222219af185b" alt="lunar_lander">
+  <img src="https://github.com/Neill-Erasmus/lunar-lander/assets/141222943/9445979b-819f-44ba-8878-01001bcab344" alt="video">
 </p>
 
 A Deep Q-Network (DQN) has been developed and trained to master the Lunar Lander environment within OpenAI's Gymnasium. This project is dedicated to harnessing reinforcement learning methodologies, empowering an agent to independently navigate and successfully land a lunar module on the moon's surface.
