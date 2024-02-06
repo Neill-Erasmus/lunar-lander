@@ -1,6 +1,11 @@
 # Lunar Lander
 
-https://github.com/Neill-Erasmus/lunar-lander/assets/141222943/5d09c272-d3e8-435e-92a7-bd2477fd629e
+<div align="center">
+    <video controls autoplay>
+        <source src="https://github.com/Neill-Erasmus/lunar-lander/assets/141222943/5d09c272-d3e8-435e-92a7-bd2477fd629e" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
 
 A Deep Q-Network (DQN) has been developed and trained to master the Lunar Lander environment within OpenAI's Gymnasium. This project is dedicated to harnessing reinforcement learning methodologies, empowering an agent to independently navigate and successfully land a lunar module on the moon's surface.
 
@@ -51,6 +56,40 @@ To balance exploration and exploitation, an epsilon-greedy strategy is often emp
 The agent iteratively interacts with the environment, collects experiences, and updates the Q-network through backpropagation. The training process continues until the Q-network converges to an optimal set of Q-values.
 
 By combining neural networks, experience replay, and target networks, DQN has proven effective in learning complex strategies for a wide range of tasks, including playing video games, robotic control, and navigation in simulated environments.
+
+## Overview of Lunar Lander Environment
+
+
+
+The Lunar Lander environment is a part of the Box2D environments collection, providing a simulation of a spacecraft landing on the moon. Here's an overview of its key aspects:
+
+### Action Space:
+
+Discrete(4): The agent can choose from four discrete actions:
+0. Do nothing
+Fire left orientation engine
+Fire main engine
+Fire right orientation engine
+
+### Observation Space:
+
+Box([-1.5, -1.5, -5., -5., -3.1415927, -5., -0., -0.], [1.5, 1.5, 5., 5., 3.1415927, 5., 1., 1.], (8,), float32): The environment provides an observation space consisting of an 8-dimensional vector. This includes the coordinates of the lander in x and y, its linear velocities in x and y, its angle, its angular velocity, and two booleans representing whether each leg is in contact with the ground.
+
+### Description:
+
+The Lunar Lander environment presents a classic rocket trajectory optimization problem. It follows Pontryagin’s maximum principle, suggesting it's optimal to either fire the engine at full throttle or turn it off, hence the discrete actions.
+Two versions of the environment exist: discrete or continuous. The landing pad is fixed at coordinates (0,0), allowing for the possibility of landing outside it. Fuel is infinite, enabling agents to learn to fly and land effectively on their first attempt.
+
+### Rewards:
+
+Rewards are granted after each step, with the total episode reward being the sum of individual step rewards.
+Rewards increase or decrease based on the proximity to the landing pad, the speed of the lander, its tilt angle, and the contact status of its legs.
+Additional rewards or penalties are given for engine firing, landing, or crashing, with a successful landing yielding +100 points and a crash incurring a penalty of -100 points.
+
+### Starting State:
+
+The lander begins at the top center of the viewport with a random initial force applied to its center of mass.
+The Lunar Lander environment provides a challenging yet rewarding task for reinforcement learning agents to master the intricacies of spacecraft control and landing.
 
 ## The Architecture of the Neural Network
 
